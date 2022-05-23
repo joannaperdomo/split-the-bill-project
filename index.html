@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split the bill!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <section>
+        <h1>Divide la cuenta</h1>
+        <div id="comensales">
+            <h3>Añade los nombres de los comensales</h3>
+            <div class="mb-3">
+                <input id="comensal" type="text" class="form-control">
+                <button id="boton-añadir-comensal" type="button" class="btn btn-primary">Añadir</button>
+              </div>
+        </div>
+        <ul id="lista-de-comensales" class="list-group"></ul>
+        <button id="boton-borrar-comensales" type="button" class="btn btn-primary">Resetear</button>    
+    </section>
+    <section>
+        <div id="producto">
+            <h3>Añade un producto</h3>
+            <div class="form-floating mb-3">
+                <input id="producto-descripción" type="text" class="form-control" id="floatingInput" placeholder="Hamburguesa de queso">
+                <label for="floatingInput">Descripción</label>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input id="producto-precio" type="text" class="form-control" aria-label="Precio">
+            </div>
+            <div class="cantidad">
+                <button id="boton-borrar-comensales" type="button" class=" btn-resta btn btn-primary">-</button>
+                <input id="producto-cantidad" type="number" class="form-control" aria-label="Precio">
+                <button id="boton-borrar-comensales" type="button" class="btn-suma  btn btn-primary">+</button>        
+            </div>
+            <div class="paga">
+                <select id="producto-comprador" class="form-select" aria-label="Default select example">
+                    <option selected>¿Quién paga?</option>
+                </select>
+            </div>
+
+    </section>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
