@@ -20,7 +20,6 @@
         </div>
         <ul id="lista-de-comensales" class="list-group"></ul>
         <div class="list-group-item active" id="total">$0</div>
-        <button id="boton-borrar-comensales" type="button" class="btn btn-primary">Resetear</button>    
     </section>
     <section>
         <div id="producto">
@@ -30,21 +29,23 @@
                 <label for="floatingInput">Descripción</label>
               </div>
             </div>
+            <div class="cantidad">
+                <button id="boton-cantidad boton-borrar-comensales" type="button" class=" btn-resta btn btn-primary">-</button>
+                <input id="producto-cantidad" type="number" class="form-control" aria-label="Precio">
+                <button id="boton-cantidad boton-añadir-comensales" type="button" class="btn-suma  btn btn-primary">+</button>        
+            </div>
             <div class="input-group mb-3">
                 <span class="input-group-text">$</span>
                 <input id="producto-precio" type="text" class="form-control" aria-label="Precio">
-            </div>
-            <div class="cantidad">
-                <button id="boton-borrar-comensales" type="button" class=" btn-resta btn btn-primary">-</button>
-                <input id="producto-cantidad" type="number" class="form-control" aria-label="Precio">
-                <button id="boton-borrar-comensales" type="button" class="btn-suma  btn btn-primary">+</button>        
             </div>
             <div id="compradores-container">
                 <div class="btn-group" id="compradores" role="group" aria-label="Basic checkbox toggle button group">
                 </div>
             </div>
             <button id="boton-añadir-producto" type="button" class="btn btn-primary">Añadir producto</button>
-            <button id="boton-enviar-whatsapp" type="button" class="btn btn-primary">Enviar</button>    
+            <button id="boton-enviar-whatsapp" type="button" class="btn btn-primary">Enviar</button>
+            <button id="boton-borrar-comensales" type="button" class="btn btn-primary">Comenzar de nuevo</button>    
+  
     </section>
     
     <script src="main.js"></script>

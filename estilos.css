@@ -1,0 +1,27 @@
+
+
+
+/* SECCIÓN AÑADIR PERSONAS*/
+
+#comensal{
+    width: 80%;
+}
+
+#total{
+    visibility: hidden;
+}
+
+/* SECCIÓN DE PRECIO */
+
+
+/* SECCION DE CANTIDAD */
+
+
+.cantidad{
+    display: flex;
+}
+
+#producto-cantidad{
+    width: 10%;
+}
+
