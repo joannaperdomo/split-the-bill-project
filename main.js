@@ -1,10 +1,8 @@
-// Elementos para añadir comensales
+// Elementos DOM para añadir personas
 const comensal = document.getElementById('comensal');
 const botonAñadirComensal = document.getElementById('boton-añadir-comensal');
 const listadeComensales = document.getElementById('lista-de-comensales')
 const comprador = document.getElementById('compradores');
-let listaDePersonas = [];
-let deudaTotal = 0;
 let todosLosComensales = document.querySelectorAll('.opcion-comprador');
 
 function Persona (nombre,deuda){
@@ -22,6 +20,8 @@ function producto (descripcion,precio,cantidad){
 
 
 // total de la cuenta
+let listaDePersonas = [];
+let deudaTotal = 0;
 const total = document.getElementById('total');
 
 // Array con total de comensales 
@@ -35,6 +35,8 @@ botonAñadirComensal.addEventListener('click', () => {
     <input type="checkbox" class="checkbox-comprador" id="${comensal.value}">
     <label for="${comensal.value}">${comensal.value}</label>`
     comensal.value = "";
+    total.style.visibility = 'hidden'&& (total.style.visibility = 'visible');
+
 })
 
 
@@ -58,7 +60,6 @@ function actualizarPersona (persona){
 }
 
 // Añadir un producto a la cuenta
-
 
 botonAñadirProducto.addEventListener('click', () =>{
     const listadeCompradores = document.querySelectorAll('.checkbox-comprador');
@@ -91,5 +92,15 @@ botonWhatsapp.addEventListener('click', () =>{
 })
 
 
+// Botones para modificar cantidad
+const restarCantidad = document.getElementById('boton-restar-cantidad');
+const sumarCantidad = document.getElementById('boton-sumar-cantidad');
 
+sumarCantidad.addEventListener('click', () => {
+    cantidad.value++
+})
+
+restarCantidad.addEventListener('click', () => {
+    cantidad.value--
+})
 
