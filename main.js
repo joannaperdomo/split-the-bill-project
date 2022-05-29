@@ -17,7 +17,6 @@ function producto (descripcion,precio,cantidad){
     this.cantidad = cantidad;
 }
 
-
 // totales
 let listaDePersonas = [];
 let deudaTotal = 0;
@@ -103,6 +102,12 @@ restarCantidad.addEventListener('click', () => {
     cantidad.value--
 })
 
-// Labels de los checkbox
+// Comenzar de nuevo
+const botonBorrar = document.getElementById('boton-borrar');
+botonBorrar.onclick = () => {
+    listadeComensales.innerHTML = "";
+    listaDePersonas = "";
+    total.innerText = "$0";
+}
 
 

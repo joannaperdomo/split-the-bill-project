@@ -9,12 +9,12 @@
 
 #total{
     visibility: hidden;
+    text-align: right;
 }
 
-/* SECCIÓN DE PRECIO */
+/* SECCIÓN AÑADE UN PRODUCTO */
 
 
-/* SECCION DE CANTIDAD */
 
 
 .cantidad{
@@ -33,7 +33,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0; 
 }
 
-/* CHECKBOX */
 
 
 
