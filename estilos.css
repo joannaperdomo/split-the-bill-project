@@ -1,28 +1,56 @@
 
+/* SECCIONES */
 
+body{
+    background-color: #FEFCFB;
+}
+
+.section{
+    padding: 5px;
+}
+
+.section1{
+    background-color: #EDEDF4 ;
+}
+
+.section2{
+    background-color: #EDEDF4;
+}
+
+#controles{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+
+}
 
 /* SECCIÓN AÑADIR PERSONAS*/
 
+.entrada{
+    display: flex;
+}
+
 #comensal{
-    width: 80%;
+    width: 60%;
 }
 
 #total{
     visibility: hidden;
     text-align: right;
+    color: white;
 }
 
 /* SECCIÓN AÑADE UN PRODUCTO */
 
 
-
+#compartido-container{
+    visibility: hidden;
+    margin-top: 5px;
+}
 
 .cantidad{
     display: flex;
-}
-
-#producto-cantidad{
-    width: 15%;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -34,5 +62,21 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
+/* BOTONES */
+
+
+#boton-enviar-whatsapp{
+    background-color: #25D366;    
+    border: #25D366;
+    text-align: center;
+}
+#boton-wap-icono{
+    width: 20px;
+}
+
+.btn-danger{
+    background-color: #A31621;
+    border-color: #A31621;
+}
 
 

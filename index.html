@@ -9,46 +9,50 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <section>
-        <h1>Divide la cuenta</h1>
+    <section class="section section1" >
+        <h1>¡Divide la cuenta!</h1>
         <div id="comensales">
-            <h3>Añade los nombres de los comensales</h3>
-            <div class="mb-3">
+            <h3>1. Añade personas</h3>
+            <div class="mb-3 entrada">
                 <input id="comensal" type="text" class="form-control">
-                <button id="boton-añadir-comensal" type="button" class="btn btn-primary">Añadir</button>
+                <button id="boton-añadir-comensal" type="button" class="btn btn-dark">Añadir</button>
               </div>
         </div>
         <ul id="lista-de-comensales" class="list-group"></ul>
-        <div class="list-group-item active" id="total">$0</div>
+        <div class="list-group-item bg-dark" id="total">$0</div>
     </section>
-    <section>
+    <section class="section section2" >
         <div id="producto">
-            <h3>Añade un producto</h3>
+            <h3>2. Añade productos</h3>
             <div class="form-floating mb-3">
                 <input id="producto-descripcion" type="text" class="form-control" id="floatingInput" placeholder="Hamburguesa de queso">
                 <label for="floatingInput">Descripción</label>
               </div>
             </div>
-            <div class="cantidad">
-                <button id="boton-restar-cantidad" type="button" class=" btn-resta btn btn-primary">-</button>
-                <input id="producto-cantidad" type="number" class="form-control" aria-label="Precio">
-                <button id="boton-sumar-cantidad" type="button" class="btn-suma  btn btn-primary">+</button>        
+            <div id="controles">
+                <div class="cantidad">
+                    <button id="boton-restar-cantidad" type="button" class=" btn-resta btn btn-dark">-</button>
+                    <input id="producto-cantidad" type="number" class="form-control" aria-label="Precio">
+                    <button id="boton-sumar-cantidad" type="button" class="btn-suma  btn btn-dark">+</button>        
+                </div>
+                <div id="precio-container" class="input-group">
+                    <span class="input-group-text">$</span>
+                    <input id="producto-precio" type="number" class="form-control" aria-label="Precio">
+                </div>
             </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text">$</span>
-                <input id="producto-precio" type="number" class="form-control" aria-label="Precio">
-            </div>
-            <div class="form-check form-switch">
+            <div id="compartido-container" class="form-check form-switch">
                 <label class="form-check-label" for="compartido">Compartido</label>
                 <input class="form-check-input" type="checkbox" role="switch" id="compartido">
               </div>
             <div id="compradores-container">
-                <div id="compradores">
+                <div id="compradores" class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
                 </div>
             </div>
-            <button id="boton-añadir-producto" type="button" class="btn btn-primary">Añadir producto</button>
-            <button id="boton-enviar-whatsapp" type="button" class="btn btn-primary">Enviar</button>
-            <button id="boton-borrar" type="button" class="btn btn-primary">Comenzar de nuevo</button>    
+            <button id="boton-añadir-producto" type="button" class="btn btn-dark">Añadir producto</button>  
+    </section>
+    <section class="section section3">
+        <button id="boton-enviar-whatsapp" type="button" class="btn btn-dark">Enviar <img id="boton-wap-icono" src="img/logo-whatsapp.png" alt="Icono de WhatsApp"></button>
+        <button id="boton-borrar" type="button" class="btn btn-danger">Comenzar de nuevo</button>  
     </section>
     
     <script src="main.js"></script>
