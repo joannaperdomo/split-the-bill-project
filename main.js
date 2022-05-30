@@ -31,7 +31,7 @@ botonAñadirComensal.addEventListener('click', () => {
     listadeComensales.innerHTML += `<li id="${comensal.value}-li" class="list-group-item opcion-comprador">${comensal.value}: $0</li>`;
     comprador.innerHTML += `
     <input name="chckbox" type="checkbox" class="btn-check form-check-input checkbox-comprador" id="${comensal.value}">
-    <label class="form-check-label btn btn-outline-primary checkbox-label" for="${comensal.value}">${comensal.value}</label>`
+    <label class="form-check-label btn btn-outline-dark checkbox-label" for="${comensal.value}">${comensal.value}</label>`
     comensal.value = "";
     total.style.visibility = 'hidden'&& (total.style.visibility = 'visible');
     compartidoContainer.style.visibility = 'hidden'&& (compartidoContainer.style.visibility = 'visible');
